@@ -15,6 +15,7 @@ for name in names:
   print name.attrib['href']
   record['link'] = name.attrib['href'] 
   record['name'] = name.text.encode('ascii','ignore')
+  record[hover] = name.a.hover
   print record
 #record is a variable for name.attrib
 #squlite save I specify how to call the key and and where to get the date in this case record
