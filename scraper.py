@@ -17,7 +17,7 @@ for name in names:
   print record
 #record is a variable for name.attrib
 #squlite save I specify how to call the key and and where to get the date in this case record
-#scraperwiki.sqlite.save(unique_keys=['link'], data=record)
+  scraperwiki.sqlite.save(unique_keys=['link'], data=record)
                              
                              
 ## # Write out to the sqlite database using scraperwiki library
