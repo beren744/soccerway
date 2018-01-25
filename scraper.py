@@ -3,7 +3,8 @@
 
 import scraperwiki
 import lxml.html
-#
+#{} create an empty dictionary; record record = {} create the function which is activated in record[link]
+record = {}             
 # # Read in a page
 html = scraperwiki.scrape("https://us.soccerway.com/teams/england/chelsea-football-club/661/")
 #
@@ -12,7 +13,7 @@ root = lxml.html.fromstring(html)
 names=root.cssselect("td div a")
 for name in names:
   print name.attrib['href']
- #record['link'] = name.attrib['href'] 
+record['link'] = name.attrib['href'] 
 #record is a variable for name.attrib
 #scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
                              
