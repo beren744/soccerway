@@ -12,7 +12,7 @@ root = lxml.html.fromstring(html)
 root.cssselect("td div a")
 for name in names:
   print name.attrib['href']
-  record["link"]=name.attrib["href] 
+  record['link']=name.attrib["href] 
 #record is a variable for name.attrib
 #scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
                              
