@@ -16,7 +16,8 @@ for name in names:
   record['link'] = name.attrib['href'] 
   print record
 #record is a variable for name.attrib
-#scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
+#squlite save I specify how to call the key and and where to get the date in this case record
+#scraperwiki.sqlite.save(unique_keys=['link'], data=record)
                              
                              
 ## # Write out to the sqlite database using scraperwiki library
